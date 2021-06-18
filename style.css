@@ -1,0 +1,218 @@
+/* ------------ RESET ------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0px 24px 0px 24px;
+}
+
+html, body { 
+    font-family: 'Inter', sans-serif;
+    background-color: #0A0C1C;
+    color: #FFFFFF;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+/* -----CARD COMPONENT BOX Container----- */
+
+.card-component-box {
+    margin-top: 177px;
+    display: flex;
+    justify-content: space-between;
+    background: #1B1937;
+    max-width: 1110px;
+    box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.203087);
+    border-radius: 8px;
+    min-height: 446px;
+}
+
+@media(max-width: 1075px) {
+    .card-component-box {
+        margin-top: 88px;
+        flex-direction: column-reverse;
+        margin-bottom: 88px;
+    }
+}    
+
+/* ------------ LEFT SIDE ------------ */
+
+.left-side {
+    max-width: 570px;
+    margin: 72px 0px 0px 72px;
+}
+
+@media(max-width: 1075px) {
+    .left-side {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px; 
+    }
+}  
+
+/* ------------ TEXT BOX ------------ */
+
+.text-box {
+    max-width: 380px;
+}
+
+.text-box p {
+    margin-top: 25px;
+}
+
+.text-box-stats {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-box-stats h2 {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.text-box-stats p {
+    margin-top: 2px;
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+@media(max-width: 1075px) {
+    .text-box {
+        margin-top: 40px;
+        padding-bottom: 62px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+    }
+
+    .text-box h1 {
+        text-align: center;
+    }
+    
+    .text-box p {
+        text-align: center;
+        
+    }
+
+    .text-box-stats {
+       width: 100%;
+    }
+
+    .text-box-stats h2 {
+        text-align: center;
+    }
+    
+    .text-box-stats p {
+        text-align: center;
+    }
+}  
+
+@media(max-width: 375px) {
+    .text-box-stats {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .text-box {
+        padding-bottom: 32px;
+    }
+}  
+
+/* ------------ RIGHT SIDE ------------ */
+
+.right-side {
+    min-width: 540px;
+}
+
+.right-side #desktop-image {
+    width: 100%;
+    height: 100%;
+}
+
+.right-side #tablet-image {
+    width: 100%;
+    display: none;
+} 
+
+.right-side #mobile-image {
+    width: 100%;
+    display: none;
+} 
+
+@media(max-width: 1075px) {
+    .right-side {
+        min-width: 0;
+    }
+    .right-side #desktop-image {
+        display: none;
+    }
+    .right-side #tablet-image {
+        display: block;
+        
+    } 
+}
+
+@media(max-width: 375px) {
+    .right-side #tablet-image {
+        display: none;
+    } 
+    .right-side #mobile-image {
+        display: block;
+        
+    } 
+    .text-box h1 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .text-box p {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .text-box-stats p {
+        margin-top: 2px;
+        font-family: Lexend Deca;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        mix-blend-mode: normal;
+        opacity: 0.6;
+    }
+}
+

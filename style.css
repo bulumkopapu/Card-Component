@@ -204,6 +204,7 @@ p {
 
     .text-box-stats p {
         margin-top: 2px;
+        padding-bottom: 30px;
         font-family: Lexend Deca;
         font-style: normal;
         font-weight: normal;
